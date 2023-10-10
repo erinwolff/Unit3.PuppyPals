@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+.featured-pup {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: purple;
+  border: 2px solid black;
+  margin: 5%;
+}
+
+li {
+  text-align: left;
+}
