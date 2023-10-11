@@ -14,23 +14,22 @@ function App() {
   console.log(featuredPup)
 
   return (
-      <div className='puppy-name'>
-        {
-          puppies.map((puppy) => {
-            // console.log(featuredPup);
-            return <p onClick={() => { setFeatPupId(puppy.id) }} key={puppy.id}>{puppy.name}</p>
-          })
-        }{featPupId && (
-          <div className='featured-pup'>
-            <h2>{featuredPup.name}</h2>
-            <ul>
-              <li>Age: {featuredPup.age}</li>
-              <li>Email: {featuredPup.email}</li>
-            </ul>
-          </div>
-
-        )}
-      </div>
+    <div className='puppy-name'>
+      {
+        puppies.map((puppy) => {
+          // console.log(featuredPup);
+          return <p onClick={() => { setFeatPupId(puppy.id) }} key={puppy.id}>{puppy.name}</p>
+        })
+      }{featPupId && (
+        <div className='featured-pup'>
+          <h2>{featuredPup.name}</h2>
+          <ul>
+            <li>Age: {featuredPup.age}</li>
+            <li>Email: {featuredPup.email}</li>
+          </ul>
+        </div>
+      )}
+    </div>
   )
 }
 
