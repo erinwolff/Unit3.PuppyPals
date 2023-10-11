@@ -14,7 +14,6 @@ function App() {
   console.log(featuredPup)
 
   return (
-    <>
       <div className='puppy-name'>
         {
           puppies.map((puppy) => {
@@ -32,8 +31,6 @@ function App() {
 
         )}
       </div>
-
-    </>
   )
 }
 
